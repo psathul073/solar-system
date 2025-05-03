@@ -21,15 +21,15 @@ loadingManager.onError = (url) => {
 // initialize the texture loader
 const textureLoader = new THREE.TextureLoader(loadingManager);
 const cubeTextureLoader = new THREE.CubeTextureLoader(loadingManager);
-cubeTextureLoader.setPath("src/static/textures/Cube-Map/");
+cubeTextureLoader.setPath("textures/Cube-Map/");
 
 // adding texture
-const sunTexture = textureLoader.load("src/static/textures/2k_sun.jpg");
-const mercuryTexture = textureLoader.load("src/static/textures/2k_mercury.jpg");
-const venusTexture = textureLoader.load("src/static/textures/2k_venus_surface.jpg");
-const marsTexture = textureLoader.load("src/static/textures/2k_mars.jpg");
-const earthTexture = textureLoader.load("src/static/textures/2k_earth_daymap.jpg");
-const moonTexture = textureLoader.load("src/static/textures/2k_moon.jpg");
+const sunTexture = textureLoader.load("textures/2k_sun.jpg");
+const mercuryTexture = textureLoader.load("textures/2k_mercury.jpg");
+const venusTexture = textureLoader.load("textures/2k_venus_surface.jpg");
+const marsTexture = textureLoader.load("textures/2k_mars.jpg");
+const earthTexture = textureLoader.load("textures/2k_earth_daymap.jpg");
+const moonTexture = textureLoader.load("textures/2k_moon.jpg");
 const backgroundMap = cubeTextureLoader.load( [
   'px.png',
   'nx.png',
