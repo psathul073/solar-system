@@ -3,7 +3,6 @@ import * as THREE from "three";
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { planets, sunMaterial, moonMaterial, backgroundMap } from './planets';
 
-
 // initialize the scene--
 const scene = new THREE.Scene();
 scene.background = backgroundMap;
@@ -82,7 +81,7 @@ const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
 controls.enableZoom =true
 controls.maxDistance = 200;
-controls.maxDistance = 50;
+controls.minDistance = 20;
 
 // resize controller--
 window.addEventListener("resize", () => {
